@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using DAL;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,18 @@ using System.Threading.Tasks;
 
 namespace DALImpl
 {
-    public class NhanVienManager
+    public class NhanVienManager:INhanVien
     {
         private List<NhanVien> nhanViens;
 
         public NhanVienManager()
         {
             nhanViens = new List<NhanVien>();
+        }
+
+        public void TaoSanLuong(int id, CongDoan congDoan)
+        {
+            throw new NotImplementedException();
         }
 
         public void ThemNhanVien()
@@ -113,6 +119,12 @@ namespace DALImpl
                 Console.WriteLine("Không tìm thấy nhân viên với ID này.");
             }
             return nhanVien;
+        }
+
+
+        public void XuatThongTinNhanVien()
+        {
+            throw new NotImplementedException();
         }
     }
 }

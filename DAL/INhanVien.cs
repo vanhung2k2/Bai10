@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace DAL
     {
         public void ThemNhanVien();
         public void XuatThongTinNhanVien();
-        public void TimNhanVien();
+        NhanVien TimKiemNhanVien(int id);
+        void TaoSanLuong(int id, CongDoan congDoan);
     }
 }

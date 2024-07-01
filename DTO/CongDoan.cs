@@ -8,11 +8,11 @@ namespace DTO
 {
     public class CongDoan
     {
-        public int MaCongDoan { get; set; }
+        public string MaCongDoan { get; set; }
         public string TenCongDoan { get; set; }
         public int SoLuongSanPham { get; set; }
 
-        public CongDoan(int maCongDoan, string tenCongDoan, int soLuongSanPham)
+        public CongDoan(string maCongDoan, string tenCongDoan, int soLuongSanPham)
         {
             MaCongDoan = maCongDoan;
             TenCongDoan = tenCongDoan;
